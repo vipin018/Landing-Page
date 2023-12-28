@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #C2B0F3;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    color: red;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1;
+  }
+  
+  .cart-symbol {
+    font-size: 20px;
+    color: white;
+  }
+  .navbar a {
+    color: black;
+    font-weight:500;
+    font-size: 30px;
+    text-decoration: none;
+    /* margin: 0 10px; */
+    /* padding: 5px 10px; */
+    padding-right: 40px;
+  }
+  a:hover{
+    color: red;
+    font-size: 35px;
+    font-weight: bolder;
+  }
+  .middle-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px); /* Adjust based on navbar height */
+    /* background-color: #f0f0f0; */
+    position: relative;
+  }
+  
+  .center-content img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    z-index: auto;
+  }
+  .center-text {
+    font-size: 200px;
+    font-weight: bolder;
+    color: black;
+    margin-top: 10px;
+    position: relative;
+    z-index: -1;
+    animation-duration: 5s;
+   
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    75% {
+      font-size: 300%;
+      margin-left: 25%;
+      width: 150%;
+    }
+  
+    to {
+      margin-left: 18%;
+      width: 100%;
+    }
+  }
+.bottom-image1 {
+  position: fixed;
+  bottom: 0;
+  animation-name: slidein;
+  left: 0;
+  width: 500px; /* Adjust the width as needed */
+  z-index: 1000; /* Ensure the image is on top of other content */
+  }
+.bottom-image2 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 500px; /* Adjust the width as needed */
+  z-index: 1000; /* Ensure the image is on top of other content */
+}
